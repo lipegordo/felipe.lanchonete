@@ -1,0 +1,161 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a tipografia e cores principais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção História */
+#historia {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#historia h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#historia p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seção Cardápio */
+#cardapio {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+#cardapio h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lanches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.lanche {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.lanche img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.lanche h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.lanche p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.lanche span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+/* Seção Contato */
+#contato {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lanches {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
